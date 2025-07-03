@@ -1,0 +1,367 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Garante que imagens sejam responsivas e não estourem o layout. */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilo padrão para todos os títulos (h1, h2, h3). */
+h1, h2, h3 {
+    font-family: 'Verdana', sans-serif;
+    color: #2c3e50;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+/* Estilo padrão para parágrafos. */
+p {
+    margin-bottom: 10px;
+}
+
+/* Estilo padrão para links. */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: text-decoration 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* --- 2. LAYOUT PRINCIPAL DO SITE --- */
+/* estrutura : cabeçalho, navegação, área de conteúdo . */
+
+/* Estilos para o cabeçalho. */
+header {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Estilos para o menu de navegação. */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+    transform: translateY(-2px);
+}
+
+/* Estilo para a área de conteúdo principal. */
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o rodapé. */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Estilos para cada parte do conteúdo, como "Sobre", "Formação", "Portfólio" e "Contato". */
+
+/* Estilos gerais para todas as seções de conteúdo. */
+section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Remove a borda da última seção. */
+section:last-of-type {
+    border-bottom: none;
+}
+
+/* Estilos para a seção "Sobre Mim". */
+#sobre-mim {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#sobre-mim h1 {
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+#sobre-mim p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto 15px auto;
+}
+
+#sobre-mim h2 {
+    color: #198754;
+    margin-top: 30px;
+}
+
+#sobre-mim ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#sobre-mim ul li {
+    background-color: #d4edda;
+    margin: 8px auto;
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.95em;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Estilos para as seções de "Formação" e "Idiomas". */
+#formacao-academica h1, #idiomas h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilo para cada item de curso na formação. */
+#formacao-academica article {
+    background-color: #e7f5ff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-left: 6px solid #007bff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+#formacao-academica article:hover {
+    transform: translateY(-5px);
+}
+
+#formacao-academica article h2 {
+    color: #0056b3;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+#formacao-academica article p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+#formacao-academica article p strong {
+    color: #343a40;
+}
+
+/* Estilos para a lista de idiomas. */
+#idiomas ul {
+    list-style: none;
+    padding: 0;
+}
+
+#idiomas ul li {
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#idiomas ul li strong {
+    color: #495057;
+}
+
+/* Estilos para o "Portfólio". */
+#meu-portfolio h1 {
+    color: #6f42c1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilo para cada projeto no portfólio. */
+.projeto {
+    background-color: #f5edfc;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-left: 6px solid #6f42c1;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.projeto h2 {
+    color: #4b0082;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.4em;
+}
+
+.projeto p {
+    margin-bottom: 8px;
+    font-size: 0.98em;
+}
+
+.projeto p strong {
+    color: #5a2893;
+}
+
+.projeto a {
+    color: #6f42c1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.projeto a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para a seção "Contato". */
+#contato {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #ffeeb2;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#contato h1 {
+    color: #ffc107;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto 15px auto;
+}
+
+.contato-info {
+    background-color: #fff9e6;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ffecb3;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contato-info p {
+    margin: 10px 0;
+    font-size: 1.05em;
+    text-align: left;
+}
+
+.contato-info p strong {
+    color: #ff9800;
+    min-width: 80px;
+    display: inline-block;
+}
+
+.contato-info a {
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.contato-info a:hover {
+    color: #e65100;
+    text-decoration: underline;
+}
+
+/* Ajustes para que o site funcione em diferentes tamanhos de tela. */
+
+/* Estilos para telas menores (celulares e tablets). */
+@media (max-width: 768px) {
+    /* Menu de navegação muda para vertical em telas pequenas. */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Ajusta margem e padding do conteúdo principal em telas pequenas. */
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    /* Ajusta a largura de parágrafos em certas seções para telas menores. */
+    #sobre-mim p, #contato p {
+        max-width: 90%;
+    }
+
+    /* Aumenta a largura da caixa de contato para preencher mais a tela. */
+    .contato-info {
+        width: 90%;
+    }
+}
+
+/* Estilos para telas muito pequenas (smartphones). */
+@media (max-width: 480px) {
+    /* Diminui o tamanho de títulos para telas menores. */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+}
